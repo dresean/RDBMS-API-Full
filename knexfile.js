@@ -3,7 +3,10 @@ module.exports = {
     client: 'sqlite3',
     connection: { filename: './database/blogdb.sqlite3' }, // change this if you want a different name for the database
     useNullAsDefault: true,
-    migrations: { tableName: 'dbmigrations' },
+    migrations: {
+      directory: './database/migrations',
+      tableName: 'dbmigrations',
+    },
     seeds: { directory: './database/seeds' },
   },
 
@@ -19,7 +22,10 @@ module.exports = {
       min: 1,
       max: 10,
     },
-    migrations: { tableName: 'dbmigrations' },
+    migrations: {
+      directory: './database/migrations',
+      tableName: 'dbmigrations',
+    },
     seeds: { directory: './database/seeds' },
   },
 };
