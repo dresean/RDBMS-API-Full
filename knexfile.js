@@ -7,21 +7,21 @@ module.exports = {
     connection: {
       filename: './database/sprintdb.sqlite3'
     },
-    useNullAsDefaul: true,
     migrations: {
       directory: './database/migrations',
       tableName: 'knex_migrations'
     },
+    useNullAsDefault: true,
     seeds: {
-      directors: './database/seeds'
+      directory: './database/seeds'
     }
   },
 
   production: {
-    client: 'postgresql',
+    client: 'mysql',
     connection: {
       database: 'Sprint',
-      user:     'username',
+      user:     'root',
       password: 'jUh9wkpinedLC0wUiDrahighd0H2riaateachyK'
     },
     pool: {
