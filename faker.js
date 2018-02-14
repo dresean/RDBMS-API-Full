@@ -25,7 +25,7 @@ const randomTags = () => {
       };
       return newTag;
     }
-
+    
   module.exports = {
   randomPosts,
   randomTags,
